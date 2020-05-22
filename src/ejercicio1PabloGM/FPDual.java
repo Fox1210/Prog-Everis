@@ -6,5 +6,8 @@ public class FPDual {
 		// TODO Auto-generated method stub
 
 	}
+	private void practicaVariable() {
+		
+	}
 
 }

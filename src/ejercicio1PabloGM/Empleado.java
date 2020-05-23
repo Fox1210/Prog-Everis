@@ -22,7 +22,7 @@ public class Empleado {
 	}
 
 	public static void setNumeroEmpleados() {
-		if (Empleado.numeroEmpleados<=127) {
+		if (Empleado.numeroEmpleados<127) {
 			Empleado.numeroEmpleados++;
 		}else {
 			System.out.println("ERROR: Se ha alcanzado el maximo de empleados");

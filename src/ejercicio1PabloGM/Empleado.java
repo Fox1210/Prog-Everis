@@ -21,13 +21,13 @@ public class Empleado {
 		return numeroEmpleados;
 	}
 
-	public static void setNumeroEmpleados() {
-		if (Empleado.numeroEmpleados<127) {
+	private static void setNumeroEmpleados() {
+		if (Empleado.numeroEmpleados < 127) {
 			Empleado.numeroEmpleados++;
-		}else {
+		} else {
 			System.out.println("ERROR: Se ha alcanzado el maximo de empleados");
 		}
-		
+
 	}
 
 	public int getVacaciones() {
@@ -35,16 +35,16 @@ public class Empleado {
 	}
 
 	private void setVacaciones(int vacaciones) {
-		if ((0 <= vacaciones && vacaciones < 21) && vacaciones<this.getVacaciones()) {
+		if ((0 <= vacaciones && vacaciones < 21) && vacaciones < this.getVacaciones()) {
 			this.vacaciones = vacaciones;
 		} else {
-			if (vacaciones>this.getVacaciones()) {
+			if (vacaciones > this.getVacaciones()) {
 				System.out.println("ERROR: Se ha modificado de forma incorecta");
 			}
-			if(vacaciones<0) {
+			if (vacaciones < 0) {
 				System.out.println("ERROR: Se ha solicitado un numero de dias negativo");
 			}
-			if (vacaciones>21) {
+			if (vacaciones > 21) {
 				System.out.println("ERROR: Se ha solicitado un numero de dias superior al máximo");
 			}
 			System.out.println("No se ha realizado la solicitud de los dias divido a un ERROR");

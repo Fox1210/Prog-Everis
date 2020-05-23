@@ -3,6 +3,7 @@ package ejercicio1PabloGM;
 public class Programador extends Empleado {
 
 	// DELARACIONVDE VARIABLES
+	private byte numeroContrato;
 	private int numeroDeEmpleado;
 	private String departamento;
 	private String especialidad;
@@ -10,12 +11,16 @@ public class Programador extends Empleado {
 	// CONSTRUCTORES
 	public Programador(String nombre, String departamento, String especialidad) {
 		super(nombre);
+		this.numeroContrato = Empleado.getNumeroEmpleados();
 		this.numeroDeEmpleado = generadorNEmpleado();
 		this.departamento = departamento;
 		this.especialidad = especialidad;
 	}
 
 	// METODOS GETTERS Y SETTERS
+	public byte getNumeroContrato() {
+		return numeroContrato;
+	}
 	public int getNumeroDeEmpleado() {
 		return numeroDeEmpleado;
 	}

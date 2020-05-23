@@ -75,5 +75,10 @@ public class Empleado {
 		diasDisfrutar = teclado.nextInt();
 		return diasDisfrutar;
 	}
+	public int diasDisfrutados() {
+		int diasDisfrutados;
+		diasDisfrutados=21-(21-this.vacaciones);
+		return diasDisfrutados;
+	}
 
 }// fin class Empleado
